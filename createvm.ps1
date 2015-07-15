@@ -9,7 +9,7 @@
 
 $vm = New-AzureVMConfig -Name "example-1" -InstanceSize Small -ImageName "a699494373c04fc0bc8f2bb1389d6106__Windows-Server-2012-Datacenter-201503.01-en.us-127GB.vhd"  
 
-$vm = Add-AzureProvisioningConfig -VM $vm -Windows -AdminUsername "user2" -Password "user2" 
+$vm = Add-AzureProvisioningConfig -VM $vm -Windows -AdminUsername "new user" -Password "yyyyyy" 
 
 $vm = Set-AzureVMDSCExtension -VM $vm -ConfigurationArchive "IISInstall.ps1.zip" -ConfigurationName "IISInstall"  
 
